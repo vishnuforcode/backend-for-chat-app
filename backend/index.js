@@ -85,9 +85,9 @@ app.use("/api/v1/message" ,messageroute)
 
 app.use(express.static(path.join(__dirname , "/frontend/build"))) ;
 
-app.get("*" , (req ,res)=>{
-    res.sendFile(path.resolve(__dirname , "frontend" , "build" , "index.html"))
-})
+// app.get("*" , (req ,res)=>{
+//     res.sendFile(path.resolve(__dirname , "frontend" , "build" , "index.html"))
+// })
 
 server.listen(Port , ()=>{
     connectDB();
